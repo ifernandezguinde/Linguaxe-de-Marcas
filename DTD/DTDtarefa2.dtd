@@ -1,0 +1,10 @@
+<!ELEMENT rede_de_investigacion (cientificos)>
+    <!ELEMENT cientificos (cientifico+)>
+        <!ELEMENT cientifico (colaboradores)>
+            <!ELEMENT cientifico EMPTY>
+                <!ATTLIST cientifico nome CDATA #REQUIRED>
+                <!ATTLIST cientifico id ID #REQUIRED>
+            <!ELEMENT colaboradores (colaborador+)>
+                <!ELEMENT colaborador EMPTY>
+                    <!ATTLIST colaborador id ID #REQUIRED
+                                        persoa1 IDREF #IMPLIED>
